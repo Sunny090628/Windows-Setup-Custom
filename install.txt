@@ -1,0 +1,9 @@
+sel dis 8 
+clean 
+conv gpt 
+cre par efi size=512 
+form fs=fat32 
+ass letter a: 
+cre par pri 
+form quick 
+ass letter a: 
