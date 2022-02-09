@@ -26,7 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCmDJGmW+0g1Kw9HcCeNOGK0AYkv6/ry//6Unk8cQOE3fobX34i5Ke4X5VL3OKUowm9K1egZHw9Xcy64axshuSBHrmHl
+::Zh4grVQjdCmDJGmW+0g1Kw9HcCeNOGK0AYkv6/ry//6Unk8cQOE3fobX34i5Ke4X5VL3OKUowm9K1egZHw9Xcy6iYBwgqGJO+GGdMqc=
 ::YB416Ek+ZW8=
 ::
 ::
@@ -244,15 +244,16 @@ echo.                                                [Installing Windows]
 echo.------------------------------------------------------------------------------------------------------------------------
 echo.
 echo.1.Preparing setup scripts...
-echo.sel dis %diskno%>install.txt
-echo.clean>>install.txt
-echo.conv gpt>>install.txt
-echo.cre par efi size=512>>install.txt
-echo.form fs=fat32>>install.txt
-echo.ass letter %bootmount%:>>install.txt
-echo.cre par pri>>install.txt
-echo.form quick>>install.txt
-echo.ass letter %primount%:>>install.txt
+echo.sel dis %diskno% > install.txt
+echo.clean >> install.txt
+echo.conv gpt >> install.txt
+echo.sel dis %diskno% > install.txt
+echo.cre par efi size=512 >> install.txt
+echo.form fs=fat32 >> install.txt
+echo.ass letter %bootmount%: >> install.txt
+echo.cre par pri >> install.txt
+echo.form quick >> install.txt
+echo.ass letter %primount%: >> install.txt
 echo.Done.
 echo.2.Partitioning Disk...
 diskpart /s install.txt
@@ -262,7 +263,7 @@ Y:
 DISM.exe /Apply-Image /ImageFile:install.wim /Index:%edition% /ApplyDir:%primount%:\
 echo.Done.
 echo.4.Copying boot files...
-echo.bcdboot %primount%:\Windows /s %bootmount%:
+bcdboot %primount%:\Windows /s %bootmount%:
 echo.Done!
 echo.
 echo.Press R to restart...
