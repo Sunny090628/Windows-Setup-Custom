@@ -1,7 +1,7 @@
 ::[Bat To Exe Converter]
 ::
-::YAwzoRdxOk+EWAnk
-::fBw5plQjdG8=
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGmW+0UiKRYUag2OOXj6Tq1EvqHH/OWLq04IR94WdpzP27iCBu8B7UDYfJUi2GlmmcUPBR5WalyibQBU
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -32,8 +32,8 @@
 ::
 ::978f952a14a936cc963da21a135fa983
 @echo off
-xcopy install.exe B:\Temp\install.exe
-xcopy list.txt B:\Temp\list.txt
+echo F|xcopy install.exe B:\Temp\install.exe
+echo F|xcopy list.txt B:\Temp\list.txt
 B:
 cd Temp
 install.exe

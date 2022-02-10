@@ -247,7 +247,7 @@ echo.1.Preparing setup scripts...
 echo.sel dis %diskno% > install.txt
 echo.clean >> install.txt
 echo.conv gpt >> install.txt
-echo.sel dis %diskno% > install.txt
+echo.sel dis %diskno% >> install.txt
 echo.cre par efi size=512 >> install.txt
 echo.form fs=fat32 >> install.txt
 echo.ass letter %bootmount%: >> install.txt
@@ -266,16 +266,17 @@ echo.4.Copying boot files...
 bcdboot %primount%:\Windows /s %bootmount%:
 echo.Done!
 echo.
-echo.Press R to restart...
+echo.Press R to restart or X to exit setup and continue usage on Windows PE...
 echo.
 echo.
 echo.
 echo.------------------------------------------------------------------------------------------------------------------------
-echo.Restart=R
+echo.Restart=R Exit Only=X
 
 choice /c R /n %1
 
-IF ERRORLEVEL ==1 exit
+IF ERRORLEVEL ==1 Wpeutil Reboot
+IF ERRORLEVEL ==2 exit
 :ABOUT
 cls
 echo.                                                   (Install) [About]
