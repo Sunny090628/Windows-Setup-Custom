@@ -26,7 +26,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCmDJGmW+0g1Kw9HcCeNOGK0AYkv6/ry//6Unk8cQOE3fobX34i5Ke4X5VL3OKUowm9K1egZHw9Xcy6iYBwgqGJO+GGdMqc=
+::Zh4grVQjdCmDJGmW+0g1Kw9HcCeNOGK0AYkv6/ry//6Unk8cQOE3fobX34i5Ke4X5VL3NaUowm9K2OgZHw9Xcy6iYBwgqGJO+GGdMqc=
 ::YB416Ek+ZW8=
 ::
 ::
@@ -284,13 +284,13 @@ echo.---------------------------------------------------------------------------
 echo.(C) Sunny090628.  All rights reserved.
 echo.
 echo.This Programme is licensed under the GNU version 3 license.  Check at the Github Repository for the license:
-echo.https://github.com/Sunny090628/Windows-Setup-Custom/blob/main/LICENSE
+echo.https://github.com/sherlockholmestech/Windows-Setup-Custom/blob/main/LICENSE
 echo.
 echo.
-echo.Version: 1.0
-echo.Arch: x86_64
-echo.
-echo.
+echo. Version: 1.0
+echo. Programe Arch: x86
+echo. install .wim image info:
+echo. Windows 10 21H2 x86_64 en-us
 echo.
 echo.
 echo.
